@@ -8,18 +8,17 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ title, description, image }: ProductCardProps) => (
-  <div className="grain-card flex flex-col">
-    <div className="h-48 rounded-t-lg overflow-hidden">
-      <img src={image} alt={title} className="w-full h-full object-cover" />
+  <div className="grain-card flex flex-col group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+    <div className="h-48 rounded-t-lg overflow-hidden bg-white p-4 flex items-center justify-center">
+      <img 
+        src={image} 
+        alt={title} 
+        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" 
+      />
     </div>
     <div className="p-6 flex-grow">
       <h3 className="text-xl font-serif font-bold text-grain-green mb-2">{title}</h3>
       <p className="text-grain-earth">{description}</p>
-    </div>
-    <div className="p-6 pt-0">
-      <a href="#contact" className="text-grain-orange font-medium hover:text-grain-orange-dark transition-colors">
-        Learn more →
-      </a>
     </div>
   </div>
 );

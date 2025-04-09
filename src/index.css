@@ -79,4 +79,37 @@
   .gradient-overlay {
     @apply absolute inset-0 bg-grain-overlay opacity-60 mix-blend-multiply;
   }
+  
+  /* Added animations and hover effects */
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+  
+  .hover-shine {
+    @apply relative overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-[50%] before:h-full before:bg-gradient-to-r before:from-transparent before:to-white/30 before:skew-x-[-25deg] hover:before:animate-shine;
+  }
+  
+  .hover-border {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-grain-yellow-dark after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .fade-in-up {
+    @apply opacity-0 translate-y-6 transition-all duration-500 ease-out;
+  }
+  
+  .animate-on-scroll {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@layer utilities {
+  .animate-shine {
+    animation: shine 1s;
+  }
 }

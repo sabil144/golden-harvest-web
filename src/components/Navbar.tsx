@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +26,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <span className="text-2xl font-serif font-bold text-grain-green">Golden<span className="text-grain-yellow-dark">Harvest</span></span>
-          </a>
+          </Link>
           
           {/* Mobile menu button */}
           <button 
@@ -39,12 +40,12 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <NavLink href="#about">About Us</NavLink>
-            <NavLink href="#products">Products</NavLink>
-            <NavLink href="#services">Services</NavLink>
-            <NavLink href="#sustainability">Sustainability</NavLink>
-            <NavLink href="#contact">Contact</NavLink>
-            <a href="#contact" className="grain-button">Request Quote</a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/services">Services</NavLink>
+            <a href="/#products" className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium">Products</a>
+            <a href="/#sustainability" className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium">Sustainability</a>
+            <a href="/#contact" className="grain-button">Request Quote</a>
           </nav>
         </div>
       </div>
@@ -54,13 +55,25 @@ const Navbar = () => {
         <div className="lg:hidden bg-white border-t border-grain-beige">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex flex-col space-y-3">
-              <MobileNavLink href="#about" onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
-              <MobileNavLink href="#products" onClick={() => setIsMenuOpen(false)}>Products</MobileNavLink>
-              <MobileNavLink href="#services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
-              <MobileNavLink href="#sustainability" onClick={() => setIsMenuOpen(false)}>Sustainability</MobileNavLink>
-              <MobileNavLink href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</MobileNavLink>
+              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
+              <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
+              <MobileNavLink to="/services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
               <a 
-                href="#contact" 
+                href="/#products" 
+                className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Products
+              </a>
+              <a 
+                href="/#sustainability" 
+                className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sustainability
+              </a>
+              <a 
+                href="/#contact" 
                 className="grain-button text-center mt-2"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -74,23 +87,23 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <a 
-    href={href} 
+const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
+  <Link 
+    to={to} 
     className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium"
   >
     {children}
-  </a>
+  </Link>
 );
 
-const MobileNavLink = ({ href, onClick, children }: { href: string; onClick: () => void; children: React.ReactNode }) => (
-  <a 
-    href={href} 
+const MobileNavLink = ({ to, onClick, children }: { to: string; onClick: () => void; children: React.ReactNode }) => (
+  <Link 
+    to={to} 
     onClick={onClick}
     className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
   >
     {children}
-  </a>
+  </Link>
 );
 
 export default Navbar;

@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
-      {/* Background image */}
+      {/* Background image - Updated to canola field with silo */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2456&q=80" 
-          alt="Golden wheat field at sunset" 
+          src="https://images.unsplash.com/photo-1591609896177-36bd975fe5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2456&q=80" 
+          alt="Canola field with silo at sunset" 
           className="w-full h-full object-cover"
         />
         <div className="gradient-overlay"></div>
@@ -17,8 +17,8 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 pt-24">
-        <div className="max-w-3xl text-white">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 animate-fade-in">
+        <div className="max-w-3xl text-white animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Quality Australian Grain for Global Markets
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl">
