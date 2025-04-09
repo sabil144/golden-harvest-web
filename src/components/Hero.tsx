@@ -5,14 +5,14 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
-      {/* Background image - Updated to canola field with silo */}
-      <div className="absolute inset-0 z-0">
+      {/* Background image - Fixed canola field with silo */}
+      <div className="absolute inset-0 z-0 bg-grain-green">
         <img 
           src="https://images.unsplash.com/photo-1591609896177-36bd975fe5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2456&q=80" 
           alt="Canola field with silo at sunset" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-80"
         />
-        <div className="gradient-overlay"></div>
+        <div className="absolute inset-0 bg-grain-overlay"></div>
       </div>
       
       {/* Content */}
@@ -25,10 +25,10 @@ const Hero = () => {
             Premium crop exports with sustainable farming and transparent supply chains.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#products" className="grain-button-secondary flex items-center justify-center">
+            <a href="/products" className="grain-button-secondary flex items-center justify-center hover-scale">
               Explore Products <ArrowRight size={20} className="ml-2" />
             </a>
-            <a href="#contact" className="grain-button flex items-center justify-center">
+            <a href="/contact" className="grain-button flex items-center justify-center hover-scale">
               Contact Us
             </a>
           </div>

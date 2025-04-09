@@ -2,11 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,10 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
   
   return (
     <header 
@@ -40,12 +45,12 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About Us</NavLink>
-            <NavLink to="/services">Services</NavLink>
-            <a href="/#products" className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium">Products</a>
-            <a href="/#sustainability" className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium">Sustainability</a>
-            <a href="/#contact" className="grain-button">Request Quote</a>
+            <NavLink to="/" isActive={isActive("/")}>Home</NavLink>
+            <NavLink to="/about" isActive={isActive("/about")}>About Us</NavLink>
+            <NavLink to="/products" isActive={isActive("/products")}>Products</NavLink>
+            <NavLink to="/services" isActive={isActive("/services")}>Services</NavLink>
+            <NavLink to="/contact" isActive={isActive("/contact")}>Contact</NavLink>
+            <a href="/contact" className="grain-button hover-scale">Request Quote</a>
           </nav>
         </div>
       </div>
@@ -55,25 +60,13 @@ const Navbar = () => {
         <div className="lg:hidden bg-white border-t border-grain-beige">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex flex-col space-y-3">
-              <MobileNavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
-              <MobileNavLink to="/about" onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
-              <MobileNavLink to="/services" onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
+              <MobileNavLink to="/" isActive={isActive("/")} onClick={() => setIsMenuOpen(false)}>Home</MobileNavLink>
+              <MobileNavLink to="/about" isActive={isActive("/about")} onClick={() => setIsMenuOpen(false)}>About Us</MobileNavLink>
+              <MobileNavLink to="/products" isActive={isActive("/products")} onClick={() => setIsMenuOpen(false)}>Products</MobileNavLink>
+              <MobileNavLink to="/services" isActive={isActive("/services")} onClick={() => setIsMenuOpen(false)}>Services</MobileNavLink>
+              <MobileNavLink to="/contact" isActive={isActive("/contact")} onClick={() => setIsMenuOpen(false)}>Contact</MobileNavLink>
               <a 
-                href="/#products" 
-                className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Products
-              </a>
-              <a 
-                href="/#sustainability" 
-                className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Sustainability
-              </a>
-              <a 
-                href="/#contact" 
+                href="/contact" 
                 className="grain-button text-center mt-2"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -87,20 +80,24 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
+const NavLink = ({ to, children, isActive = false }: { to: string; children: React.ReactNode, isActive?: boolean }) => (
   <Link 
     to={to} 
-    className="text-grain-green hover:text-grain-orange transition-colors duration-200 font-medium"
+    className={`font-medium transition-colors duration-200 relative ${
+      isActive ? 'text-grain-orange' : 'text-grain-green hover:text-grain-orange'
+    } ${isActive ? 'after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-grain-yellow-dark' : ''}`}
   >
     {children}
   </Link>
 );
 
-const MobileNavLink = ({ to, onClick, children }: { to: string; onClick: () => void; children: React.ReactNode }) => (
+const MobileNavLink = ({ to, onClick, children, isActive = false }: { to: string; onClick: () => void; children: React.ReactNode, isActive?: boolean }) => (
   <Link 
     to={to} 
     onClick={onClick}
-    className="text-grain-green hover:text-grain-orange transition-colors duration-200 py-2 text-lg font-medium border-b border-grain-beige-light"
+    className={`py-2 text-lg font-medium border-b border-grain-beige-light ${
+      isActive ? 'text-grain-orange' : 'text-grain-green hover:text-grain-orange'
+    } transition-colors duration-200`}
   >
     {children}
   </Link>

@@ -9,7 +9,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ title, description, icon }: ServiceCardProps) => (
-  <div className="grain-card flex flex-col items-center text-center p-8 transition-all duration-300 hover:shadow-xl hover:border-grain-yellow">
+  <div className="grain-card flex flex-col items-center text-center p-8 transition-all duration-300 hover:shadow-xl hover:border-grain-yellow group">
     <div className="bg-grain-yellow/10 p-4 rounded-full mb-6 transition-all duration-300 group-hover:bg-grain-yellow/30">
       {icon}
     </div>
@@ -65,7 +65,7 @@ const ServicesSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="group">
+            <div key={index} className="group transform transition-all duration-500 hover:-translate-y-2">
               <ServiceCard 
                 title={service.title}
                 description={service.description}
@@ -76,7 +76,7 @@ const ServicesSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <a href="/services" className="grain-button inline-flex items-center">
+          <a href="/services" className="grain-button inline-flex items-center hover-scale">
             Learn More About Our Services
           </a>
         </div>

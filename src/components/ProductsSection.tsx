@@ -13,12 +13,21 @@ const ProductCard = ({ title, description, image }: ProductCardProps) => (
       <img 
         src={image} 
         alt={title} 
-        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110" 
+        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-125" 
       />
     </div>
     <div className="p-6 flex-grow">
       <h3 className="text-xl font-serif font-bold text-grain-green mb-2">{title}</h3>
       <p className="text-grain-earth">{description}</p>
+    </div>
+    <div className="px-6 pb-6 mt-auto">
+      <a 
+        href={`/products#${title.toLowerCase().replace(/\s+/g, '-')}`} 
+        className="text-grain-orange font-medium hover:text-grain-orange-dark transition-colors hover-border inline-flex items-center"
+      >
+        View Details
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
     </div>
   </div>
 );
@@ -69,8 +78,8 @@ const ProductsSection = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <a href="#contact" className="grain-button inline-flex items-center">
-            Request Product Information
+          <a href="/products" className="grain-button inline-flex items-center hover-scale">
+            View All Products
           </a>
         </div>
       </div>

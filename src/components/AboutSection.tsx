@@ -30,17 +30,19 @@ const AboutSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="rounded-lg overflow-hidden shadow-xl">
-            <Carousel className="w-full">
-              <CarouselContent>
+          <div className="rounded-lg overflow-hidden shadow-xl h-full">
+            <Carousel className="w-full h-full">
+              <CarouselContent className="h-full">
                 {harvestingImages.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <img 
-                        src={image.url} 
-                        alt={image.alt}
-                        className="w-full h-64 object-cover rounded-lg"
-                      />
+                  <CarouselItem key={index} className="h-full">
+                    <div className="p-1 h-full">
+                      <div className="h-80 md:h-96">
+                        <img 
+                          src={image.url} 
+                          alt={image.alt}
+                          className="w-full h-full object-cover rounded-lg"
+                        />
+                      </div>
                     </div>
                   </CarouselItem>
                 ))}
@@ -61,7 +63,7 @@ const AboutSection = () => {
             </p>
             
             <div className="space-y-4">
-              <div className="flex items-start group">
+              <div className="flex items-start group animate-on-scroll fade-in-up">
                 <CheckCircle className="text-grain-yellow-dark mr-3 mt-1 transition-transform group-hover:scale-125 duration-300" />
                 <div>
                   <h4 className="font-bold text-grain-green">Quality Assurance</h4>
@@ -69,7 +71,7 @@ const AboutSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start group">
+              <div className="flex items-start group animate-on-scroll fade-in-up">
                 <CheckCircle className="text-grain-yellow-dark mr-3 mt-1 transition-transform group-hover:scale-125 duration-300" />
                 <div>
                   <h4 className="font-bold text-grain-green">Sustainable Practices</h4>
@@ -77,7 +79,7 @@ const AboutSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start group">
+              <div className="flex items-start group animate-on-scroll fade-in-up">
                 <CheckCircle className="text-grain-yellow-dark mr-3 mt-1 transition-transform group-hover:scale-125 duration-300" />
                 <div>
                   <h4 className="font-bold text-grain-green">Farmer Partnerships</h4>
@@ -85,7 +87,7 @@ const AboutSection = () => {
                 </div>
               </div>
               
-              <div className="flex items-start group">
+              <div className="flex items-start group animate-on-scroll fade-in-up">
                 <CheckCircle className="text-grain-yellow-dark mr-3 mt-1 transition-transform group-hover:scale-125 duration-300" />
                 <div>
                   <h4 className="font-bold text-grain-green">Global Relationships</h4>
