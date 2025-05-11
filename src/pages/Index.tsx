@@ -9,11 +9,12 @@ import GrowerCommitmentSection from '../components/GrowerCommitmentSection';
 import MarketPricesSection from '../components/MarketPricesSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
+import MapSection from '../components/MapSection';
 
 const Index = () => {
   useEffect(() => {
     const handleScroll = () => {
-      const animatedElements = document.querySelectorAll('.fade-in-up');
+      const animatedElements = document.querySelectorAll('.fade-in-up, .product-card, .grain-card');
       animatedElements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
         const elementBottom = element.getBoundingClientRect().bottom;
@@ -42,6 +43,7 @@ const Index = () => {
       <ServicesSection />
       <GrowerCommitmentSection />
       <MarketPricesSection />
+      <MapSection />
       <ContactSection />
       <Footer />
     </div>

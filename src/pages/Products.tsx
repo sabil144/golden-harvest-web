@@ -56,7 +56,7 @@ const Products = () => {
         "Consistent batch quality",
         "Available in bulk or container shipments",
       ],
-      image: "https://images.unsplash.com/photo-1467175281368-8ea735c1b30c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "/lovable-uploads/9843c61d-01d2-440f-bdff-b1e68bc1430f.png",
       imageAlt: "Premium wheat grains"
     },
     {
@@ -68,7 +68,7 @@ const Products = () => {
         "Clean, uniform kernels",
         "Full traceability from farm to shipment",
       ],
-      image: "https://images.unsplash.com/photo-1589435278793-62c056ff57a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "/lovable-uploads/dfb2ce1c-cd55-4e6f-8012-e7d7a68f36f5.png",
       imageAlt: "Malting barley grains",
       reversed: true
     },
@@ -81,7 +81,7 @@ const Products = () => {
         "GMO and non-GMO varieties available",
         "Sustainable cultivation practices",
       ],
-      image: "https://images.unsplash.com/photo-1595122444916-9bbdb4b93f3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "/lovable-uploads/3c32d7ff-f633-420d-b40b-df333f3d4ab2.png",
       imageAlt: "Canola seeds"
     },
     {
@@ -93,7 +93,7 @@ const Products = () => {
         "Multiple varieties available",
         "Sustainably grown with natural fertilizers",
       ],
-      image: "https://images.unsplash.com/photo-1611582589957-f24a39358a20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      image: "/lovable-uploads/a9820ee6-d16b-4d8c-9fcd-b8cddd986c2a.png",
       imageAlt: "Various pulses and legumes",
       reversed: true
     }
