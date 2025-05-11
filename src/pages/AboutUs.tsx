@@ -11,10 +11,10 @@ const AboutUs = () => {
       
       {/* Hero */}
       <section className="relative py-32 bg-grain-beige">
-        <div className="absolute inset-0 z-0 opacity-20">
+        <div className="absolute inset-0 z-0 opacity-30">
           <img 
-            src="https://images.unsplash.com/photo-1625246333195-78d73c5207fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" 
-            alt="Harvesting wheat" 
+            src="/lovable-uploads/5e6bd70a-a0db-4495-814d-630bbb391d45.png" 
+            alt="Golden wheat field with rural landscape" 
             className="w-full h-full object-cover"
           />
         </div>
@@ -46,8 +46,8 @@ const AboutUs = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1564529596912-1d02c8318d39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                alt="Australian wheat field" 
+                src="/lovable-uploads/4acbcd32-9479-47e1-bc7c-7244c47c5457.png"
+                alt="Combine harvester in a wheat field" 
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-grain-yellow p-6 rounded-lg shadow-lg">
@@ -65,7 +65,7 @@ const AboutUs = () => {
           <h2 className="section-title text-center mb-16">Our Core Values</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <Check className="text-grain-green h-6 w-6" />
               </div>
@@ -73,7 +73,7 @@ const AboutUs = () => {
               <p className="text-grain-earth">We never compromise on the quality of our grain products, ensuring they meet the highest standards.</p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <Users className="text-grain-green h-6 w-6" />
               </div>
@@ -81,7 +81,7 @@ const AboutUs = () => {
               <p className="text-grain-earth">We build lasting relationships with farmers and clients based on trust and mutual benefit.</p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <Globe2 className="text-grain-green h-6 w-6" />
               </div>
@@ -89,7 +89,7 @@ const AboutUs = () => {
               <p className="text-grain-earth">We are committed to environmentally responsible farming and business practices.</p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <Trophy className="text-grain-green h-6 w-6" />
               </div>
@@ -126,7 +126,7 @@ const AboutUs = () => {
                 image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
               }
             ].map((person, index) => (
-              <div key={index} className="text-center group">
+              <div key={index} className="text-center group transform transition-all duration-300 hover:-translate-y-2">
                 <div className="mb-6 relative overflow-hidden rounded-lg">
                   <img 
                     src={person.image}
@@ -149,3 +149,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
