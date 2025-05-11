@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
-      {/* Background image - Fixed canola field with silo */}
+      {/* Background image - Canola field */}
       <div className="absolute inset-0 z-0 bg-grain-green">
         <img 
-          src="https://images.unsplash.com/photo-1591609896177-36bd975fe5c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2456&q=80" 
-          alt="Canola field with silo at sunset" 
+          src="/lovable-uploads/878a87ed-afc7-4aec-8a76-775e445314e8.png" 
+          alt="Australian canola field with stormy sky" 
           className="w-full h-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>

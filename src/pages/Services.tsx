@@ -13,8 +13,8 @@ const Services = () => {
       <section className="relative py-32">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" 
-            alt="Grain trading" 
+            src="/lovable-uploads/878a87ed-afc7-4aec-8a76-775e445314e8.png" 
+            alt="Australian canola field" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-grain-green opacity-75"></div>
@@ -51,7 +51,8 @@ const Services = () => {
                   "Real-time cargo tracking",
                   "Marine insurance coverage"
                 ],
-                icon: <Ship size={48} className="text-grain-yellow-dark" />
+                icon: <Ship size={48} className="text-grain-yellow-dark" />,
+                image: "/lovable-uploads/3de05b2b-eccd-462d-bf0f-e8ccb5bf134c.png"
               },
               {
                 title: "Logistics Management",
@@ -63,7 +64,8 @@ const Services = () => {
                   "Container packing and fumigation",
                   "Integrated supply chain management"
                 ],
-                icon: <TruckIcon size={48} className="text-grain-yellow-dark" />
+                icon: <TruckIcon size={48} className="text-grain-yellow-dark" />,
+                image: "/lovable-uploads/bdb24574-ad55-40ea-a40a-8a3ea6f5a52c.png"
               },
               {
                 title: "Quality Control",
@@ -75,7 +77,8 @@ const Services = () => {
                   "HACCP and GMP compliance",
                   "Contaminant screening and monitoring"
                 ],
-                icon: <ShieldCheck size={48} className="text-grain-yellow-dark" />
+                icon: <ShieldCheck size={48} className="text-grain-yellow-dark" />,
+                image: "/lovable-uploads/982ce716-5417-4440-a4d8-cbb760e2383f.png"
               },
               {
                 title: "Market Analysis",
@@ -87,7 +90,8 @@ const Services = () => {
                   "Currency impact assessments",
                   "Customized market intelligence"
                 ],
-                icon: <BarChart3 size={48} className="text-grain-yellow-dark" />
+                icon: <BarChart3 size={48} className="text-grain-yellow-dark" />,
+                image: "/lovable-uploads/8d68302b-5a64-4634-a39e-67628084b61a.png"
               },
             ].map((service, index) => (
               <div key={index} className={`grid md:grid-cols-2 gap-10 items-center ${index % 2 !== 0 ? 'md:grid-flow-dense' : ''}`}>
@@ -110,9 +114,9 @@ const Services = () => {
                 </div>
                 <div className={`relative rounded-lg overflow-hidden shadow-xl ${index % 2 !== 0 ? 'md:col-start-1' : ''}`}>
                   <img 
-                    src={`https://images.unsplash.com/photo-${1580200916956 + index * 3000}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`}
+                    src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
@@ -127,7 +131,7 @@ const Services = () => {
           <h2 className="section-title text-center mb-16">Additional Services</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full transform hover:-translate-y-2 transition-transform">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <Leaf className="text-grain-green h-6 w-6" />
               </div>
@@ -154,7 +158,7 @@ const Services = () => {
               </a>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full transform hover:-translate-y-2 transition-transform">
               <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
                 <GlobeIcon className="text-grain-green h-6 w-6" />
               </div>
