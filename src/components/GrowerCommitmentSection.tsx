@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CreditCard, TrendingUp, ShieldCheck } from 'lucide-react';
 
@@ -8,8 +7,8 @@ const GrowerCommitmentSection = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1469041797191-50ace28483c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" 
-          alt="Agricultural landscape" 
+          src="/lovable-uploads/983c50d8-ab4e-4d00-a607-3aa599bb727e.png" 
+          alt="Farmers shaking hands in wheat field" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-grain-green opacity-80"></div>
