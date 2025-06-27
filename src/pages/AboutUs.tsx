@@ -20,9 +20,9 @@ const AboutUs = () => {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-grain-green">About Golden Harvest</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-grain-green">About Sunrise Commodities</h1>
             <p className="text-xl text-grain-earth-dark">
-              A journey from Australian farms to global tables since 1985
+              A journey from Australian farms to global tables since 1992
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ const AboutUs = () => {
             <div>
               <h2 className="section-title mb-6">Our Story</h2>
               <p className="text-lg text-grain-earth-dark mb-6">
-                Golden Harvest began with a simple mission: to connect Australian grain farmers with global markets by offering fair prices and transparent trade practices. Founded by James Wilson in 1985, the company started as a small operation in rural Victoria.
+                Sunrise Commodities began with a simple mission: to connect Australian grain farmers with global markets by offering fair prices and transparent trade practices. Founded by Scott Merson in 1992, the company started as a small operation in rural Victoria.
               </p>
               <p className="text-lg text-grain-earth-dark mb-6">
                 Today, we've grown into one of Australia's most respected grain exporters, but our core values remain the same. We prioritize quality, sustainability, and building long-lasting relationships with farmers and international buyers.
@@ -51,7 +51,7 @@ const AboutUs = () => {
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-grain-yellow p-6 rounded-lg shadow-lg">
-                <p className="font-serif font-bold text-2xl text-grain-green">35+</p>
+                <p className="font-serif font-bold text-2xl text-grain-green">30+</p>
                 <p className="text-grain-green-dark">Years of Excellence</p>
               </div>
             </div>
@@ -105,40 +105,47 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center mb-4">Our Leadership</h2>
           <p className="section-subtitle text-center mb-16">
-            Meet the team guiding our vision and operations
+            Meet the visionary behind our success
           </p>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "James Wilson",
-                title: "Founder & CEO",
-                image: "https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-              },
-              {
-                name: "Sarah Thompson",
-                title: "Chief Operations Officer",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-              },
-              {
-                name: "Michael Chen",
-                title: "Director of International Trade",
-                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-              }
-            ].map((person, index) => (
-              <div key={index} className="text-center group transform transition-all duration-300 hover:-translate-y-2">
-                <div className="mb-6 relative overflow-hidden rounded-lg">
-                  <img 
-                    src={person.image}
-                    alt={person.name}
-                    className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-grain-green opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="text-center md:text-left order-2 md:order-1">
+                <h3 className="text-3xl font-serif font-bold text-grain-green mb-2">Scott Merson</h3>
+                <p className="text-grain-orange text-lg font-medium mb-4">Managing Director & Founder</p>
+                <p className="text-grain-earth-dark mb-6">
+                  Scott Merson was appointed to the GTA Board in October 2024 as a Merchant Association Director. 
+                  As the Managing Director of Sunrise Commodities, Scott brings over 20 years of experience in 
+                  agricultural production and marketing.
+                </p>
+                <p className="text-grain-earth-dark mb-6">
+                  Scott has been involved with several projects for industry evolution and development by 
+                  increasing competition and offering alternatives. He is a member of the Standards Committee 
+                  and the Transport, Storage & Ports Committee.
+                </p>
+                <div className="bg-grain-beige-light p-4 rounded-lg">
+                  <h4 className="font-bold text-grain-green mb-2">Education</h4>
+                  <ul className="text-grain-earth-dark">
+                    <li>• Diploma of Business</li>
+                    <li>• Bachelor of Business (Accounting)</li>
+                  </ul>
                 </div>
-                <h3 className="text-xl font-serif font-bold text-grain-green">{person.name}</h3>
-                <p className="text-grain-earth">{person.title}</p>
               </div>
-            ))}
+              
+              <div className="text-center order-1 md:order-2">
+                <div className="relative inline-block">
+                  <img 
+                    src="/lovable-uploads/ebf821de-f759-4666-bdf0-e20ca2f4ba4b.png"
+                    alt="Scott Merson - Managing Director of Sunrise Commodities"
+                    className="w-80 h-80 object-cover rounded-lg shadow-xl mx-auto"
+                  />
+                  <div className="absolute -bottom-4 -right-4 bg-grain-yellow p-4 rounded-lg shadow-lg">
+                    <p className="font-serif font-bold text-xl text-grain-green">20+</p>
+                    <p className="text-grain-green-dark text-sm">Years Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -149,4 +156,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
-
