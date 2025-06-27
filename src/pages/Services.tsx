@@ -35,7 +35,7 @@ const Services = () => {
           <div className="mb-16">
             <h2 className="section-title mb-6">Export Solutions</h2>
             <p className="text-lg text-grain-earth-dark max-w-4xl">
-              At Golden Harvest, we offer end-to-end export solutions designed to meet the diverse needs of our international clients. From quality control and logistics to market analysis and consulting, our services ensure seamless grain export from Australian farms to global markets.
+              At Sunrise Commodities, we offer end-to-end export solutions designed to meet the diverse needs of our international clients. From quality control and logistics to market analysis and consulting, our services ensure seamless grain export from Australian farms to global markets.
             </p>
           </div>
           
@@ -132,10 +132,12 @@ const Services = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full transform hover:-translate-y-2 transition-transform">
-              <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
+              <div className="bg-grain-yellow/10 p-4 rounded-full inline-flex mb-6">
                 <Leaf className="text-grain-green h-6 w-6" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-grain-green mb-3">Sustainability Programs</h3>
+              <div className="bg-grain-yellow px-4 py-2 rounded-md mb-4">
+                <h3 className="text-xl font-serif font-bold text-grain-green-dark">Sustainability Programs</h3>
+              </div>
               <p className="text-grain-earth mb-6">
                 We support farmers in implementing environmentally friendly practices through our sustainability programs. These initiatives help reduce environmental impact while maintaining high crop yields.
               </p>
@@ -159,10 +161,12 @@ const Services = () => {
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col h-full transform hover:-translate-y-2 transition-transform">
-              <div className="bg-grain-yellow-light p-4 rounded-full inline-flex mb-6">
+              <div className="bg-grain-yellow/10 p-4 rounded-full inline-flex mb-6">
                 <GlobeIcon className="text-grain-green h-6 w-6" />
               </div>
-              <h3 className="text-xl font-serif font-bold text-grain-green mb-3">Import/Export Consulting</h3>
+              <div className="bg-grain-yellow px-4 py-2 rounded-md mb-4">
+                <h3 className="text-xl font-serif font-bold text-grain-green-dark">Import/Export Consulting</h3>
+              </div>
               <p className="text-grain-earth mb-6">
                 Navigate the complexities of international grain trade with our expert consulting services. We provide guidance on regulations, documentation, and trade requirements to ensure smooth export processes.
               </p>
@@ -191,7 +195,7 @@ const Services = () => {
       {/* CTA */}
       <section className="py-16 bg-grain-green text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Export with Golden Harvest?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Export with Sunrise Commodities?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Contact our team to discuss your grain export needs and discover how our services can help you access global markets.
           </p>
