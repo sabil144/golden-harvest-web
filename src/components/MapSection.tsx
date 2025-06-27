@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { WorldMap } from './ui/world-map';
+import { RegionalMap } from './ui/regional-map';
 
 const MapSection = () => {
   return (
@@ -13,9 +13,9 @@ const MapSection = () => {
           </p>
         </div>
         
-        <div className="relative w-full max-w-5xl mx-auto">
-          <div className="bg-gray-900 rounded-lg p-4">
-            <WorldMap
+        <div className="relative w-full max-w-6xl mx-auto">
+          <div className="bg-white rounded-lg p-4 shadow-lg">
+            <RegionalMap
               dots={[
                 {
                   start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
@@ -44,7 +44,7 @@ const MapSection = () => {
               ]}
               lineColor="#D4AF37"
             />
-            <p className="text-xs text-center text-white/70 mt-2">Australian Grain Export Routes - Asian Markets</p>
+            <p className="text-xs text-center text-gray-600 mt-2">Australian Grain Export Routes - Asian Markets</p>
           </div>
           
           <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
