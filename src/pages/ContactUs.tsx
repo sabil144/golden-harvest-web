@@ -34,7 +34,7 @@ const ContactUs = () => {
                     <MapPin className="text-grain-orange mr-3 mt-1 group-hover:scale-125 transition-transform duration-300" size={20} />
                     <div>
                       <h4 className="font-bold text-grain-green">Main Office</h4>
-                      <p>123 Grain Drive, Melbourne, Victoria 3000, Australia</p>
+                      <p>567 Commodity Plaza, Brisbane, Queensland 4000, Australia</p>
                     </div>
                   </div>
                   
@@ -42,7 +42,7 @@ const ContactUs = () => {
                     <Phone className="text-grain-orange mr-3 mt-1 group-hover:scale-125 transition-transform duration-300" size={20} />
                     <div>
                       <h4 className="font-bold text-grain-green">Phone</h4>
-                      <p>+61 3 1234 5678</p>
+                      <p>+61 7 3456 7890</p>
                     </div>
                   </div>
                   
@@ -50,7 +50,7 @@ const ContactUs = () => {
                     <Mail className="text-grain-orange mr-3 mt-1 group-hover:scale-125 transition-transform duration-300" size={20} />
                     <div>
                       <h4 className="font-bold text-grain-green">Email</h4>
-                      <p>info@goldenharvest.com.au</p>
+                      <p>info@sunrisecommodities.com.au</p>
                     </div>
                   </div>
                   
@@ -58,7 +58,7 @@ const ContactUs = () => {
                     <Clock className="text-grain-orange mr-3 mt-1 group-hover:scale-125 transition-transform duration-300" size={20} />
                     <div>
                       <h4 className="font-bold text-grain-green">Business Hours</h4>
-                      <p>Monday-Friday: 8:30AM - 5:30PM AEST</p>
+                      <p>Monday-Friday: 8:00AM - 6:00PM AEST</p>
                     </div>
                   </div>
                 </div>
@@ -68,13 +68,13 @@ const ContactUs = () => {
                 <h3 className="text-xl font-serif font-bold text-grain-green mb-4">Global Offices</h3>
                 <ul className="space-y-3">
                   <li className="hover:translate-x-1 transition-transform duration-200">
-                    <span className="font-bold">Singapore:</span> 50 Raffles Place, #30-00
+                    <span className="font-bold">Singapore:</span> 75 Robinson Road, #15-01
                   </li>
                   <li className="hover:translate-x-1 transition-transform duration-200">
-                    <span className="font-bold">Dubai:</span> Jumeirah Lakes Towers, Cluster D
+                    <span className="font-bold">Dubai:</span> Business Bay, Bay Square, Building 7
                   </li>
                   <li className="hover:translate-x-1 transition-transform duration-200">
-                    <span className="font-bold">Shanghai:</span> Pudong New Area, 200120
+                    <span className="font-bold">Tokyo:</span> Shibuya, 2-24-12 Shibuya
                   </li>
                 </ul>
               </div>

@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="py-12 grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4">Golden Harvest</h3>
+            <h3 className="text-xl font-serif font-bold mb-4">Sunrise Commodities</h3>
             <p className="text-white/80 mb-4">
               Premium Australian grain exports for global markets, committed to quality and sustainability.
             </p>
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} Golden Harvest. All rights reserved.
+              © {new Date().getFullYear()} Sunrise Commodities. All rights reserved.
             </p>
           </div>
           
@@ -67,7 +67,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm mb-4 md:mb-0">
-            Quality Australian grain since 1985
+            Quality Australian grain since 1992
           </p>
           
           <div className="flex space-x-6">

@@ -23,9 +23,9 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-grain-beige-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title mb-4">About Golden Harvest</h2>
+          <h2 className="section-title mb-4">About Sunrise Commodities</h2>
           <p className="section-subtitle">
-            A trusted name in Australian grain export since 1985, delivering quality crops worldwide.
+            A trusted name in Australian grain export since 1992, delivering quality crops worldwide.
           </p>
         </div>
         
@@ -59,7 +59,7 @@ const AboutSection = () => {
               Our Heritage and Commitment
             </h3>
             <p className="text-grain-earth-dark mb-6">
-              Golden Harvest has been a cornerstone of Australian agriculture for over three decades. Our commitment to quality, sustainability, and fair trade practices has established us as leaders in the global grain market.
+              Sunrise Commodities has been a cornerstone of Australian agriculture for over three decades. Our commitment to quality, sustainability, and fair trade practices has established us as leaders in the global grain market.
             </p>
             
             <div className="space-y-4">
@@ -83,7 +83,7 @@ const AboutSection = () => {
                 <CheckCircle className="text-grain-yellow-dark mr-3 mt-1 transition-transform group-hover:scale-125 duration-300" />
                 <div>
                   <h4 className="font-bold text-grain-green">Farmer Partnerships</h4>
-                  <p>Working directly with over 200 Australian farmers to ensure fair compensation.</p>
+                  <p>Working directly with over 300 Australian farmers to ensure fair compensation.</p>
                 </div>
               </div>
               
