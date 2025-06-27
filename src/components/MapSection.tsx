@@ -9,7 +9,7 @@ const MapSection = () => {
         <div className="text-center mb-10">
           <h2 className="section-title mb-4">Our Global Reach</h2>
           <p className="section-subtitle">
-            Sunrise Commodities exports premium Australian grains to key markets worldwide.
+            Sunrise Commodities exports premium Australian grains to key Asian markets.
           </p>
         </div>
         
@@ -35,37 +35,37 @@ const MapSection = () => {
                 },
                 {
                   start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 51.5074, lng: -0.1278 }, // UK (London)
+                  end: { lat: 13.7563, lng: 100.5018 }, // Thailand (Bangkok)
                 },
                 {
                   start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 52.3676, lng: 4.9041 }, // Netherlands (Amsterdam)
+                  end: { lat: 28.6139, lng: 77.2090 }, // India (New Delhi)
                 }
               ]}
               lineColor="#D4AF37"
             />
-            <p className="text-xs text-center text-white/70 mt-2">Australian Grain Export Routes - Major Trading Partners</p>
+            <p className="text-xs text-center text-white/70 mt-2">Australian Grain Export Routes - Asian Markets</p>
           </div>
           
           <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="grain-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-              <h3 className="font-bold text-grain-green">Key Export Markets</h3>
+              <h3 className="font-bold text-grain-green">Asian Markets Focus</h3>
               <p className="text-sm text-grain-earth mt-2">
-                Australia exports high-quality grains to major markets in Asia, Europe, and North America.
+                Our primary export destinations include Japan, China, South Korea, and Southeast Asian countries.
               </p>
             </div>
             
             <div className="grain-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-              <h3 className="font-bold text-grain-green">Export Volume</h3>
+              <h3 className="font-bold text-grain-green">Regional Expertise</h3>
               <p className="text-sm text-grain-earth mt-2">
-                Total export value exceeds $20 billion annually, with significant growth in Asian markets.
+                Deep understanding of Asian market requirements and quality standards for Australian grains.
               </p>
             </div>
             
             <div className="grain-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-              <h3 className="font-bold text-grain-green">Global Partners</h3>
+              <h3 className="font-bold text-grain-green">Strategic Partnerships</h3>
               <p className="text-sm text-grain-earth mt-2">
-                Sunrise Commodities maintains strong relationships with importers across key regions worldwide.
+                Long-term relationships with Asian importers ensuring reliable grain supply chains.
               </p>
             </div>
           </div>
