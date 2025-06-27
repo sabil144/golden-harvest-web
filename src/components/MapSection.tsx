@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { WorldMap } from './ui/world-map';
+import { CustomWorldMap } from './ui/custom-world-map';
 
 const MapSection = () => {
   return (
@@ -14,38 +14,7 @@ const MapSection = () => {
         </div>
         
         <div className="relative w-full max-w-5xl mx-auto">
-          <div className="bg-gray-900 rounded-lg p-4">
-            <WorldMap
-              dots={[
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 35.6762, lng: 139.6503 }, // Japan (Tokyo)
-                },
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 39.9042, lng: 116.4074 }, // China (Beijing)
-                },
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 37.5665, lng: 126.9780 }, // South Korea (Seoul)
-                },
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 21.0285, lng: 105.8542 }, // Vietnam (Hanoi)
-                },
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 13.7563, lng: 100.5018 }, // Thailand (Bangkok)
-                },
-                {
-                  start: { lat: -25.2744, lng: 133.7751 }, // Australia (center)
-                  end: { lat: 28.6139, lng: 77.2090 }, // India (New Delhi)
-                }
-              ]}
-              lineColor="#D4AF37"
-            />
-            <p className="text-xs text-center text-white/70 mt-2">Australian Grain Export Routes - Asian Markets</p>
-          </div>
+          <CustomWorldMap />
           
           <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="grain-card transform transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
