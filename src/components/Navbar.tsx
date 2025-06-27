@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -25,8 +24,8 @@ const Navbar = () => {
   return (
     <header 
       className={cn(
-        'fixed w-full z-50 transition-all duration-300', 
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        'fixed w-full z-50 transition-all duration-300 bg-white shadow-md', 
+        isScrolled ? 'py-2' : 'py-4'
       )}
     >
       <div className="container mx-auto px-4 md:px-6">
